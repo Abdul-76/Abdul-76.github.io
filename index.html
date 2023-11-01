@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ======================= Favicon link ============================ -->
+    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon">
+
+    <!-- ======================= link CSS ================================ -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ======================= mediaqueries ============================  -->
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <!-- ======================= IconScout ===============================  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Abdul</div>
+        <div>
+          <ul class="nav-links">
+            <li>
+              <a href="#home"><i class="uil uil-estate"></i> Home</a>
+            </li>
+            <li>
+              <a href="#about"><i class="uil uil-user"></i> About</a>
+            </li>
+            <li>
+              <a href="#skils"><i class="uil uil-file-alt"></i> Skils</a>
+            </li>
+            <li>
+              <a href="#projects"><i class="uil uil-scenery"></i> Project</a>
+            </li>
+            <li>
+              <a href="#contact"><i class="uil uil-message"></i> Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Abdul</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li>
+              <a href="#home" onclick="toggleMenu()"
+                ><i class="uil uil-estate"></i> Home</a
+              >
+            </li>
+            <li>
+              <a href="#about" onclick="toggleMenu()"
+                ><i class="uil uil-user"></i> About</a
+              >
+            </li>
+            <li>
+              <a href="#skils" onclick="toggleMenu()"
+                ><i class="uil uil-file-alt"></i> Skils</a
+              >
+            </li>
+            <li>
+              <a href="#project" onclick="toggleMenu()"
+                ><i class="uil uil-scenery"></i> Project</a
+              >
+            </li>
+            <li>
+              <a href="#contact" onclick="toggleMenu()"
+                ><i class="uil uil-message"></i> Contact</a
+              >
+            </li>
+          </div>
+        </div>
+      </nav>
+      <!-- ============================= Profile ============================ -->
+      <section id="profile">
+        <div class="section__pic-container">
+          <img id="pic" src="./Assets/Abdul-1.png" alt="Abdul profile picture" />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Shaik Abdullah</h1>
+          <p class="section__text__p2">Software Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./Assets/Abdullah Resume.Pdf')"
+            ><i class="uil uil-file-download-alt"></i> Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                <i class="uil uil-envelope-search"></i> Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./Assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/shaik-abdullah76/'"
+            />
+            <img
+              src="./Assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/Abdul-76'"
+            />
+            <img
+              src="./Assets/gmail.png"
+              alt="My gmail contact"
+              class="icon"
+              onclick="location.href='#contact'"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- ===================== About Section ============================= -->
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./Assets/Abdul-2.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./Assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>College Level <br />Software Developer</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./Assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>B.Tech <br /> CSE <br>Graduate</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                Hello, I'm Shaik Abdullah, a recent graduate from KSRM College of Engineering with a degree in Computer Science and Engineering (CSE). My academic journey has provided me with a strong foundation in the technical aspects of the field, including programming, algorithms, and problem-solving.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== skils Section ===================================== -->
+      <section id="skils">
+        <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skils</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./Assets/Skils-C.png"
+                  alt="skils-c icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C language</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/skils-java.png"
+                  alt="skils-java icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JAVA</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/skils-python.png"
+                  alt="skils-python icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/skils-DSA.png"
+                  alt="skils-DSA icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data structure</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./Assets/skils-html.png"
+                  alt="skils-html icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Advance</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/skils-CSS3.png"
+                  alt="skils-CSS3 icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Assets/skils-js.png"
+                  alt="skils-js icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/github.png"
+                  alt="skils-github icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <!-- ===================== Project section =================================== -->
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Pdf </h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https:https://github.com/Abdul-76'"
+                ><i class="uil uil-github"></i>
+                  Github
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">E-learning</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Abdul-76'"
+                ><i class="uil uil-github"></i>
+                  Github
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Projects</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/Abdul-76'"
+                ><i class="uil uil-github"></i>
+                  Github
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ===================== Contact section   ================================ -->
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">ShaikAbdullahj7@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com/in/shaik-abdullah76/">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+      <!-- ==================== footer section ===================================  -->
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li>
+                <a href="#desktop-nav"><i class="uil uil-estate"></i> Home</a>
+              </li>
+              <li>
+                <a href="#about"><i class="uil uil-user"></i> About</a>
+              </li>
+              <li>
+                <a href="#skils"><i class="uil uil-file-alt"></i> Skils</a>
+              </li>
+              <li>
+                <a href="#projects"><i class="uil uil-scenery"></i> Project</a>
+              </li>
+              <li>
+                <a href="#contact"><i class="uil uil-message"></i> Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023 Abdul. All Rights Reserved.</p>
+      </footer>
+
+    <!-- ======================= javascript ================================ -->
+    <script src="javascript.js"></script>
+</body>
+</html>
